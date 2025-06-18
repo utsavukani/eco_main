@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodie Rocks - EcoShop Gamification Dashboard</title>
+    <link rel="stylesheet" href="style_page_2.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header new-header">
+        <div class="header-top">
+            <div class="container flex justify-between items-center">
+                <div class="logo">
+                    <img src="images/logo.png" alt="EcoShop" />
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search" />
+
+                </div>
+                <div class="header-icons">
+                    <b class="icon grid-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></b>
+                    <b class="icon cart-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path
+                                d="m480-560-56-56 63-64H320v-80h167l-64-64 57-56 160 160-160 160ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                        </svg></b>
+                    <b class="icon user-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path
+                                d="M391-480q-36 0-60-27t-19-63l13-98q8-57 52-94.5T480-800q59 0 103 37.5t52 94.5l13 98q5 36-19 63t-60 27H391Zm0-80h178l-13-96q-4-28-25.5-46T480-720q-29 0-50.5 18T404-656l-13 96Zm89 0ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240 0Z" />
+                        </svg></b>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <nav class="nav container">
+                <a href="index.html" class="nav-link">Body Care</a>
+                <a href="#" class="nav-link">Organic Food</a>
+                <a href="#" class="nav-link">Bamboo Products</a>
+                <a href="#" class="nav-link active">Track Your Goodness</a>
+                <a href="#" class="nav-link">About Us</a>
+                <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link">Language</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto max-w-5xl px-4 py-6">
+        <nav aria-label="breadcrumb" class="breadcrumb-panel">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Track Your Goodness</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container mx-auto max-w-5xl px-4 py-6">
+        <!-- Header Section -->
+        <div
+            class="goodie-panel flex items-center justify-between rounded-xl bg-gradient-to-r from-[#D6EFCB] to-[#A7E6D7] shadow-md p-6 mb-6">
+            <div class="goodie-left">
+                <div>
+                    <div class="goodie-title text-3xl font-extrabold text-gray-800 flex items-center gap-2">🪨 Goodie
+                        Rocks</div>
+                    <div class="goodie-subtitle text-lg text-green-900 font-medium">Your Eco Journey Rewards</div>
+                </div>
+            </div>
+            <div class="goodie-right flex items-center gap-3">
+                <div
+                    class="ollie-circle w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md border border-green-200">
+                    <img src="images/ollie.png" alt="Ollie" class="w-12 h-12 object-contain" />
+                </div>
+                <div
+                    class="goodie-speech bg-white rounded-lg px-4 py-2 text-green-900 text-sm font-semibold shadow border border-green-100">
+                    Great job, EcoWarrior!<br>You're almost at your next milestone!</div>
+            </div>
+        </div>
+
+
+        <!-- Points Overview Card -->
+        <div class="card points-overview bg-white rounded-xl shadow-lg p-6 mb-8 border border-gray-200">
+            <div class="card__body">
+                <div class="points-display flex items-center justify-between mb-4">
+                    <div class="current-rocks flex flex-col items-start">
+                        <span class="rocks-count text-5xl font-extrabold text-green-800" id="current-rocks">847</span>
+                        <span class="rocks-label text-base text-gray-500">Goodie Rocks</span>
+                    </div>
+                    <div class="level-info flex items-center gap-2">
+                        <div
+                            class="level-badge flex items-center gap-1 bg-green-100 text-green-800 px-3 py-1 rounded-full font-semibold text-sm">
+                            <span class="level-icon text-xl">🌱</span>
+                            <span id="current-level">Sapling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-section mb-4">
+                    <div class="progress-header flex items-center justify-between text-sm text-gray-700 mb-1">
+                        <span>Progress to Tree 🌳</span>
+                        <span><span id="progress-current">847</span> / <span id="progress-target">1000</span></span>
+                    </div>
+                    <div class="progress-bar w-full h-3 bg-gray-200 rounded-full overflow-hidden">
+                        <div class="progress-fill bg-gradient-to-r from-green-400 to-green-700 h-3 rounded-full"
+                            id="progress-fill"></div>
+                    </div>
+                    <div class="milestone-reward text-xs text-yellow-700 font-medium mt-2 flex items-center gap-1">
+                        <span>🎁 Next reward: Premium Seed Collection!</span>
+                    </div>
+                </div>
+
+                <div class="monthly-stats flex items-center justify-between mt-4">
+                    <div class="stat-item flex flex-col items-center">
+                        <span class="stat-value text-2xl font-bold text-green-800" id="monthly-rocks">234</span>
+                        <span class="stat-label text-xs text-gray-500">This Month</span>
+                    </div>
+                    <div class="stat-item flex flex-col items-center">
+                        <span class="stat-value text-2xl font-bold text-green-800">153</span>
+                        <span class="stat-label text-xs text-gray-500">Rocks Needed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Earning Opportunities Section -->
+        <section class="earning-section mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">🌟 Ways to Earn Goodie Rocks
+            </h2>
+            <div class="earning-grid grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div
+                    class="earning-card flex flex-col items-center bg-white rounded-xl shadow border border-gray-200 p-5 text-center transition hover:shadow-lg">
+                    <div class="earning-icon text-3xl mb-2">🛒</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Make a Purchase</h3>
+                    <p class="text-sm text-gray-500 mb-2">Earn rocks with every order</p>
+                    <div
+                        class="points-info bg-green-100 text-green-800 rounded-full px-3 py-1 text-xs font-medium mb-3">
+                        5-20 rocks per ₹100</div>
+                    <button class="btn btn--secondary w-full">Shop Now</button>
+                </div>
+
+                <div
+                    class="earning-card flex flex-col items-center bg-white rounded-xl shadow border border-gray-200 p-5 text-center transition hover:shadow-lg">
+                    <div class="earning-icon text-3xl mb-2">⭐</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Write Reviews</h3>
+                    <p class="text-sm text-gray-500 mb-2">Share your product experience</p>
+                    <div
+                        class="points-info bg-green-100 text-green-800 rounded-full px-3 py-1 text-xs font-medium mb-3">
+                        +10 rocks each</div>
+                    <button class="btn btn--secondary w-full">Review Products</button>
+                </div>
+
+                <div
+                    class="earning-card flex flex-col items-center bg-white rounded-xl shadow border border-gray-200 p-5 text-center transition hover:shadow-lg">
+                    <div class="earning-icon text-3xl mb-2">👥</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Refer Friends</h3>
+                    <p class="text-sm text-gray-500 mb-2">Invite eco-conscious friends</p>
+                    <div
+                        class="points-info bg-green-100 text-green-800 rounded-full px-3 py-1 text-xs font-medium mb-3">
+                        +25 rocks each</div>
+                    <button class="btn btn--secondary w-full">Invite Friends</button>
+                </div>
+
+                <div
+                    class="earning-card flex flex-col items-center bg-white rounded-xl shadow border border-gray-200 p-5 text-center transition hover:shadow-lg">
+                    <div class="earning-icon text-3xl mb-2">🔄</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Repeat Purchases</h3>
+                    <p class="text-sm text-gray-500 mb-2">Bonus for buying same items again</p>
+                    <div
+                        class="points-info bg-green-100 text-green-800 rounded-full px-3 py-1 text-xs font-medium mb-3">
+                        +5-15 bonus rocks</div>
+                    <button class="btn btn--secondary w-full">View Favorites</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Activity Feed -->
+        <section class="activity-section mb-8">
+            <div class="card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                <div class="card__body">
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">📈 Recent Activity</h2>
+                    <div class="activity-feed space-y-3" id="activity-feed">
+                        <div
+                            class="activity-item flex items-center justify-between bg-gray-50 rounded-lg px-4 py-3 border border-gray-100">
+                            <div class="activity-icon text-2xl mr-3">🛒</div>
+                            <div class="activity-content flex-1">
+                                <p class="font-medium text-gray-700"><strong>Purchased Organic Face Wash</strong></p>
+                                <span class="activity-time text-xs text-gray-400">2 hours ago</span>
+                            </div>
+                            <div class="activity-rocks text-green-700 font-bold text-base">+15 🪨</div>
+                        </div>
+
+                        <div
+                            class="activity-item flex items-center justify-between bg-gray-50 rounded-lg px-4 py-3 border border-gray-100">
+                            <div class="activity-icon text-2xl mr-3">⭐</div>
+                            <div class="activity-content flex-1">
+                                <p class="font-medium text-gray-700"><strong>Reviewed Bamboo Toothbrush Set</strong></p>
+                                <span class="activity-time text-xs text-gray-400">1 day ago</span>
+                            </div>
+                            <div class="activity-rocks text-green-700 font-bold text-base">+10 🪨</div>
+                        </div>
+
+                        <div
+                            class="activity-item flex items-center justify-between bg-gray-50 rounded-lg px-4 py-3 border border-gray-100">
+                            <div class="activity-icon text-2xl mr-3">👥</div>
+                            <div class="activity-content flex-1">
+                                <p class="font-medium text-gray-700"><strong>Referred friend Maya</strong></p>
+                                <span class="activity-time text-xs text-gray-400">3 days ago</span>
+                            </div>
+                            <div class="activity-rocks text-green-700 font-bold text-base">+25 🪨</div>
+                        </div>
+                    </div>
+
+                    <div class="social-proof mt-4 text-center text-sm text-gray-600 bg-green-50 rounded-lg py-2">🌍 You
+                        and <strong class="text-green-800">127 other eco-warriors</strong> earned rocks today!</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rewards Section -->
+        <section class="rewards-section mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">🎁 Redeem Your Goodie Rocks
+            </h2>
+            <div class="rewards-tabs flex gap-2 mb-4">
+                <button class="tab-btn active px-4 py-2 rounded-full bg-green-100 text-green-800 font-medium shadow-sm"
+                    data-tab="freebies">Goodness Freebies</button>
+                <button class="tab-btn px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium"
+                    data-tab="donations">Donate for Good</button>
+            </div>
+
+            <div class="tab-content active" id="freebies">
+                <div class="rewards-grid grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div
+                        class="reward-card flex flex-col items-center bg-white rounded-xl shadow border border-gray-200 p-5 text-center transition hover:shadow-lg">
+                        <div class="reward-icon text-3xl mb-2">🌿</div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Herb Seeds Pack</h3>
+                        <p class="text-sm text-gray-500 mb-2">Grow your own herbs</p>
+                        <div
+                            class="reward-cost bg-green-100 text-green-800 rounded-full px-3 py-1 text-xs font-medium mb-3">
+                            100 🪨</div>
+                        <button class="btn btn--primary w-full">Claim Now</button>
+                    </div>
+
+                    <div
+                        class="reward-card flex flex-col items-center bg-white rounded-xl shadow border border-gray-200 p-5 text-center transition hover:shadow-lg">
+                        <div class="reward-icon text-3xl mb-2">🎋</div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Bamboo Plant Kit</h3>
+                        <p class="text-sm text-gray-500 mb-2">Start your indoor garden</p>
+                        <div
+                            class="reward-cost bg-green-100 text-green-800 rounded-full px-3 py-1 text-xs font-medium mb-3">
+                            250 🪨</div>
+                        <button class="btn btn--primary w-full">Claim Now</button>
+                    </div>
+
+                    <div
+                        class="reward-card flex flex-col items-center bg-white rounded-xl shadow border border-gray-200 p-5 text-center transition hover:shadow-lg">
+                        <div class="reward-icon text-3xl mb-2">🌱</div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Eco Starter Sample Set</h3>
+                        <p class="text-sm text-gray-500 mb-2">Try new organic products</p>
+                        <div
+                            class="reward-cost bg-green-100 text-green-800 rounded-full px-3 py-1 text-xs font-medium mb-3">
+                            500 🪨</div>
+                        <button class="btn btn--primary w-full">Claim Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="donations">
+                <div class="rewards-grid grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div
+                        class="reward-card flex flex-col items-center bg-white rounded-xl shadow border border-gray-200 p-5 text-center transition hover:shadow-lg">
+                        <div class="reward-icon text-3xl mb-2">🌳</div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Plant Trees Initiative</h3>
+                        <p class="text-sm text-gray-500 mb-2">Plant 1 tree in your name</p>
+                        <div
+                            class="reward-cost bg-green-100 text-green-800 rounded-full px-3 py-1 text-xs font-medium mb-3">
+                            200 🪨</div>
+                        <button class="btn btn--primary w-full">Donate Now</button>
+                    </div>
+
+                    <div
+                        class="reward-card flex flex-col items-center bg-white rounded-xl shadow border border-gray-200 p-5 text-center transition hover:shadow-lg">
+                        <div class="reward-icon text-3xl mb-2">🌊</div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Ocean Cleanup Project</h3>
+                        <p class="text-sm text-gray-500 mb-2">Remove 1kg plastic from oceans</p>
+                        <div
+                            class="reward-cost bg-green-100 text-green-800 rounded-full px-3 py-1 text-xs font-medium mb-3">
+                            300 🪨</div>
+                        <button class="btn btn--primary w-full">Donate Now</button>
+                    </div>
+
+                    <div
+                        class="reward-card flex flex-col items-center bg-white rounded-xl shadow border border-gray-200 p-5 text-center transition hover:shadow-lg">
+                        <div class="reward-icon text-3xl mb-2">🚜</div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-1">Sustainable Farming Support</h3>
+                        <p class="text-sm text-gray-500 mb-2">Support local organic farmers</p>
+                        <div
+                            class="reward-cost bg-green-100 text-green-800 rounded-full px-3 py-1 text-xs font-medium mb-3">
+                            400 🪨</div>
+                        <button class="btn btn--primary w-full">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Badges Section -->
+        <section class="badges-section mb-8">
+            <div class="card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                <div class="card__body">
+                    <h2>🏆 Goodness Badges</h2>
+                    <div class="badges-grid grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                        <div
+                            class="badge-item earned flex flex-col items-center bg-white rounded-xl shadow border border-green-200 p-5 text-center">
+                            <div class="badge-icon text-3xl mb-2">🏁</div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-1">First Steps</h4>
+                            <p class="text-sm text-gray-500 mb-2">Made your first purchase</p>
+                            <button class="btn btn--sm btn--secondary share-badge w-full">Share</button>
+                        </div>
+
+                        <div
+                            class="badge-item earned flex flex-col items-center bg-white rounded-xl shadow border border-green-200 p-5 text-center">
+                            <div class="badge-icon text-3xl mb-2">⭐</div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-1">Review Hero</h4>
+                            <p class="text-sm text-gray-500 mb-2">Write 10 product reviews</p>
+                            <button class="btn btn--sm btn--secondary share-badge w-full">Share</button>
+                        </div>
+
+                        <div
+                            class="badge-item in-progress flex flex-col items-center bg-white rounded-xl shadow border border-yellow-200 p-5 text-center">
+                            <div class="badge-icon text-3xl mb-2">👥</div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-1">Friend Magnet</h4>
+                            <p class="text-sm text-gray-500 mb-2">Refer 5 friends</p>
+                            <div class="badge-progress w-full mt-2">
+                                <span class="block text-xs text-gray-500 mb-1">Progress: 3/5</span>
+                                <div class="mini-progress w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                                    <div class="mini-progress-fill bg-yellow-400 h-2 rounded-full" style="width: 60%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Floating Action Button -->
+        <button class="fab" id="rock-shower">
+            <span>🪨</span>
+        </button>
+    </div>
+
+    <!-- Rock Animation Container -->
+    <div class="rock-animation-container" id="rock-container"></div>
+
+    <script src="app_page_2.js"></script>
+</body>
+
+</html>
